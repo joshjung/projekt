@@ -1,7 +1,6 @@
 {
 	"name": "projekt",
-	"auth": "Joshua Jung",
-	"email": "joshua.p.jung@gmail.com",
+	"preferGlobal": true,
 	"version": "0.1.0",
 	"description": "A project management set of tools designed around require.js that includes tools to analyze all your javascript files and perform refactoring on them.",
 	"keywords": ["project", "management", "refactor", "refactoring", "renaming", "rename", "analysis"],
@@ -11,9 +10,15 @@
 		"imports": "do imports",
 		"require": "do require"
 	},
-	"main": "js/Projekt.js",
+	"main": "./projekt.js",
 	"bin": {
-		"projekt": "./projekt.js"
+		"projekt": "./projekt"
+	},
+	"scripts": {
+		"scan": "node ./projekt.js scan"
+	},
+	"engine": {
+		"node": ">=0.6"
 	},
 	"man": "./README.md",
 	"repository": {
