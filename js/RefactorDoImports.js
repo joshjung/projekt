@@ -7,12 +7,6 @@ module.exports = {
 
 			requireOutputFilePrev = "" + data;
 
-			projectFileLoaded = true;
-
-			if (!dataLoaded || !projectFileLoaded) {
-				return;
-			}
-
 			// We loop through every file...
 			for (var i = 0; i < classInfos.length; i++) {
 				// We load the contents of the file...

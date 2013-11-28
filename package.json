@@ -1,7 +1,7 @@
 {
 	"name": "projekt",
 	"preferGlobal": true,
-	"version": "0.1.20",
+	"version": "0.1.21",
 	"description": "A project management set of tools designed around require.js that includes tools to analyze all your javascript files and perform refactoring on them.",
 	"keywords": ["project", "management", "refactor", "refactoring", "renaming", "rename", "analysis"],
 	"license": "MIT",
