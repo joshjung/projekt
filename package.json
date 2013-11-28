@@ -1,8 +1,9 @@
 {
 	"name": "projekt",
+	"auth": "Joshua Jung",
+	"email": "joshua.p.jung@gmail.com",
 	"version": "0.1.0",
-	"description",
-	"A project management set of tools designed around require.js that includes tools to analyze all your javascript files and perform refactoring on them.",
+	"description": "A project management set of tools designed around require.js that includes tools to analyze all your javascript files and perform refactoring on them.",
 	"keywords": ["project", "management", "refactor", "refactoring", "renaming", "rename", "analysis"],
 	"license": "MIT",
 	"scripts": {
