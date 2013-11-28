@@ -1,4 +1,4 @@
-#!/usr/local/Cellar/node/0.10.18/bin/node
+#!/usr/local/bin/node
 
 project = require("./js/Projekt");
 
