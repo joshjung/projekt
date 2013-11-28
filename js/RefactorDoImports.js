@@ -1,4 +1,5 @@
 fs = require("fs");
+StringUtil = require("./util/StringUtil");
 
 module.exports = {
 	run: function(project, callback) {
@@ -26,10 +27,10 @@ module.exports = {
 
 						if (ix != -1) {
 							// Now we iterate backwards until we find the starting quotation mark.
-							var startIX = findReverse(contents, ix, quotes[q]) + 1;
+							var startIX = StringUtil.findReverse(contents, ix, quotes[q]) + 1;
 							var endIX = ix + classInfos[j].js.className.length;
 
-							contents = replaceMidWith(contents, startIX, endIX, classInfos[j].js.packageName + "." + classInfos[j].js.className);
+							contents = StringUtil.replaceMidWith(contents, startIX, endIX, classInfos[j].js.packageName + "." + classInfos[j].js.className);
 
 							fs.writeFileSync(classInfos[i].fullPath, contents);
 						}
