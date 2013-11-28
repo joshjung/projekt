@@ -1,7 +1,7 @@
 fs = require("fs");
-project = require("./JSProject");
-FileUtil = require("../util/FileUtil");
-StringUtil = require("../util/StringUtil");
+project = require("./Projekt");
+FileUtil = require("./util/FileUtil");
+StringUtil = require("./util/StringUtil");
 
 var classNameDuplicateCheck = {};
 var errors = [];

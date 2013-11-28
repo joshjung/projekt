@@ -1,4 +1,4 @@
-scanner = require("./JSProjectScanner");
+scanner = require("./ProjektScanner");
 refactorDoRequire = require("./RefactorDoRequire");
 refactorDoImports = require("./RefactorDoImports");
 
@@ -18,7 +18,7 @@ ProjectLibrary.prototype = {
 
 		var self = this;
 
-		fs.readFile('./project.json', function(err, data) {
+		fs.readFile('./project-settings.json', function(err, data) {
 			if (err) throw err;
 
 			self.settings = JSON.parse(data);

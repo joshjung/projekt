@@ -1,4 +1,4 @@
-jsProject
+Projekt
 =========
 
-JSProject - A Javascript project manager, including project scanning, refactoring, and optimization tools
+A Javascript project manager, including project scanning, refactoring, and optimization tools

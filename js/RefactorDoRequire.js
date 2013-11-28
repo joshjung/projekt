@@ -1,5 +1,5 @@
 fs = require("fs");
-StringUtil = require("../util/StringUtil");
+StringUtil = require("./util/StringUtil");
 
 module.exports = {
 	run: function(project, callback) {

@@ -1,5 +1,3 @@
-#!/usr/local/bin/node
-
 project = require("./jsProject/jsProject");
 
 var instructions = {
