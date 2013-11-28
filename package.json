@@ -10,9 +10,9 @@
 		"imports": "node projekt.js imports",
 		"require": "node projekt.js require"
 	},
-	"main": "./projekt.js",
+	"main": "./js/Projekt.js",
 	"bin": {
-		"projekt": "node ./projekt.js"
+		"projekt": "./projekt.js"
 	},
 	"scripts": {
 		"scan": "node ./projekt.js scan"
