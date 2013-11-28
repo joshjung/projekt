@@ -1,16 +1,16 @@
 {
 	"name": "projekt",
 	"preferGlobal": true,
-	"version": "0.1.13",
+	"version": "0.1.14",
 	"description": "A project management set of tools designed around require.js that includes tools to analyze all your javascript files and perform refactoring on them.",
 	"keywords": ["project", "management", "refactor", "refactoring", "renaming", "rename", "analysis"],
 	"license": "MIT",
 	"scripts": {
-		"scan": "do scan",
-		"imports": "do imports",
-		"require": "do require"
+		"scan": "node projekt.js scan",
+		"imports": "node projekt.js imports",
+		"require": "node projekt.js require"
 	},
-	"main": "./projekt.js",
+	"main": "./projekt",
 	"bin": {
 		"projekt": "./projekt"
 	},
@@ -22,6 +22,6 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/joshjung/projekt"
+		"url": "https://github.com/joshjung/projekt.git"
 	}
 }
