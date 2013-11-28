@@ -1,6 +1,6 @@
 #!/usr/local/Cellar/node/0.10.18/bin/node
 
-project = require("./jsProject/jsProject");
+project = require("./js/Projekt");
 
 var instructions = {
 	scan: {
