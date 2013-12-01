@@ -15,12 +15,11 @@ ProjectLibrary.prototype = {
 		this.settings = this.settings ? this.settings : {};
 		this.settings.packageDelimiter = this.settings.packageDelimiter ? this.settings.packageDelimiter : ".";
 		this.settings.javascriptRootDirFull = fs.realpathSync(".") + this.settings.javascriptRootDir;
-
-		console.log(this.settings);
 	},
 	readSettings: function(callback) {
 		if (this.settings) {
 			callback(this.settings);
+			return;
 		}
 
 		var self = this;
@@ -30,7 +29,7 @@ ProjectLibrary.prototype = {
 
 			self.settings = JSON.parse(data);
 
-			self.setupPackageDefaults();
+			self.setupSettingDefaults();
 
 			callback(self.settings);
 		});

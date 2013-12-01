@@ -22,7 +22,7 @@ var getJSCodeInformation = function(path) {
 	var packageName = "";
 
 	for (var i = 0; i < split.length - 1; i++) {
-		packageName += split[i];
+		packageName += (packageName.length ? project.settings.packageDelimiter : "") + split[i];
 	}
 
 	if (classNameDuplicateCheck[className] != null) {
