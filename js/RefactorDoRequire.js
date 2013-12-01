@@ -23,7 +23,7 @@ module.exports = {
 			for (var i = 0; i < project.scanResults.classes.length; i++) {
 				var ci = project.scanResults.classes[i];
 
-				requireOutputFile += prefix + "\"" + ci.js.packageName + project.settings.packageDelimiter + ci.js.className + "\": \"" + project.settings.requireMainJSPathPrefix + ci.js.className + "\",\n";
+				requireOutputFile += prefix + "\"" + ci.js.packageName + project.settings.packageDelimiter + ci.js.className + "\": \"" + ci.js.packagePath + "\",\n";
 			}
 
 			requireOutputFile = requireOutputFile.substr(0, requireOutputFile.length - 2) + "\n";

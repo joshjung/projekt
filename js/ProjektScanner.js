@@ -35,7 +35,7 @@ var getJSCodeInformation = function(path) {
 	return {
 		packageName: packageName,
 		className: className,
-		publicPath: project.settings.jsOutputPrefix + "/" + path
+		packagePath: project.settings.requireMainJSPathPrefix + path
 	};
 };
 
