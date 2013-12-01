@@ -23,7 +23,7 @@ module.exports = {
 			var classes = project.scanResults.classes.concat();
 
 			classes.sort(function(a, b) {
-				return (a.js.packageName + project.settings.packageDelimiter + a.js.className) > (b.js.packageName + project.settings.packageDelimiter + b.js.className);
+				return (a.js.packageName + project.settings.packageDelimiter + a.js.className) < (b.js.packageName + project.settings.packageDelimiter + b.js.className);
 			});
 
 			var lastPackageName = "";
