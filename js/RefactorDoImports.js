@@ -30,7 +30,7 @@ module.exports = {
 							var startIX = StringUtil.findReverse(contents, ix, quotes[q]) + 1;
 							var endIX = ix + classInfos[j].js.className.length;
 
-							contents = StringUtil.replaceMidWith(contents, startIX, endIX, classInfos[j].js.packageName + "." + classInfos[j].js.className);
+							contents = StringUtil.replaceMidWith(contents, startIX, endIX, classInfos[j].js.packageName + project.settings.packageDelimiter + classInfos[j].js.className);
 
 							fs.writeFileSync(classInfos[i].fullPath, contents);
 						}
