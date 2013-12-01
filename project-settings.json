@@ -5,5 +5,5 @@
 	"requireMain": "/demo/main.js",
 	"outputStartToken": "/** GENERATED REQUIRE START **/",
 	"outputEndToken": "/** GENERATED REQUIRE END **/",
-	"packageDelimiter": "_"
+	"packageDelimiter": "."
 }

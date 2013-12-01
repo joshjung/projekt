@@ -49,6 +49,7 @@ ProjectLibrary.prototype = {
 	scan: function(callback) {
 		if (this.scanResults) {
 			callback(this.scanResults);
+			return;
 		}
 
 		var self = this;

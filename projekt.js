@@ -26,6 +26,17 @@ var instructions = {
 				console.log("Refactoring of " + project.settings.requireMain + " has completed successfully.");
 			});
 		}
+	},
+	all: {
+		desc: "Runs 'require' and 'imports'.",
+		run: function() {
+			project.require(function() {
+				project.imports(function() {
+					console.log("Refactoring of imports and " + project.settings.requireMain + " has completed successfully.");
+				});
+			});
+
+		}
 	}
 };
 

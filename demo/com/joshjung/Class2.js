@@ -1,1 +1,1 @@
-define(["com_joshjung_Class1", "com_joshjung_Class3"], function(class1, class3) {});
+define(["com.joshjung.Class1", "com.joshjung.Class3"], function(class1, class3) {});
