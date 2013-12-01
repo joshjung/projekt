@@ -35,7 +35,8 @@ var getJSCodeInformation = function(path) {
 	return {
 		packageName: packageName,
 		className: className,
-		packagePath: project.settings.requireMainJSPathPrefix + path
+		classPath: (packageName.length ? packageName + project.settings.packageDelimiter : "") + className,
+		filePath: project.settings.requireMainJSPathPrefix + path
 	};
 };
 

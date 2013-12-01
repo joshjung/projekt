@@ -23,7 +23,7 @@ module.exports = {
 			var classes = project.scanResults.classes.concat();
 
 			classes.sort(function(a, b) {
-				return (a.js.packageName + project.settings.packageDelimiter + a.js.className) < (b.js.packageName + project.settings.packageDelimiter + b.js.className) ? -1 : 1;
+				return a.js.classPath < b.js.classPath ? -1 : 1;
 			});
 
 			var lastPackageName = "";
@@ -36,7 +36,7 @@ module.exports = {
 					requireOutputFile += prefix + "//---------------------------------\n";
 				}
 
-				requireOutputFile += prefix + "\"" + ci.js.packageName + project.settings.packageDelimiter + ci.js.className + "\": \"" + ci.js.packagePath + "\",\n";
+				requireOutputFile += prefix + "\"" + ci.js.classPath + "\": \"" + ci.js.filePath + "\",\n";
 
 				lastPackageName = ci.js.packageName;
 			}
