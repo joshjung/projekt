@@ -9,3 +9,5 @@ echo Pushing to GIT repo
 git push
 echo Submitting to npm
 sudo npm publish .
+echo Updating local
+sudo npm install projekt -g
