@@ -27,7 +27,7 @@ Each project is required to have its own `project-settings.json` in the root dir
 		"publicDir": "",						
 		// The root directory inside publicDir where your javascript files are to be scanned.
 		"javascriptRootDir": "/demo",			
-		"jsOutputPrefix": "",					
+		"requireMainJSPathPrefix": "",					
 		// The location of the root data-main require.js file
 		"requireMain": "/demo/main.js",			
 		// The token inside of your requireMain that is the prefix for injecting generated require.js mappings
