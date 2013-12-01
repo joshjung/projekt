@@ -3,7 +3,7 @@
 	"javascriptRootDir": "/demo",
 	"requireMainJSPathPrefix": "/demo/",
 	"requireMain": "/demo/main.js",
-	"outputStartToken": "/** GENERATED REQUIRE START **/",
-	"outputEndToken": "/** GENERATED REQUIRE END **/",
+	"outputStartToken": "// vvvvvvvv",
+	"outputEndToken": "// ^^^^^^^^",
 	"packageDelimiter": "."
 }

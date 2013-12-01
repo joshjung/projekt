@@ -20,10 +20,25 @@ module.exports = {
 
 			requireOutputFile = requireOutputFilePrev.substr(0, replaceIndexStart) + "\n";
 
-			for (var i = 0; i < project.scanResults.classes.length; i++) {
-				var ci = project.scanResults.classes[i];
+			var classes = project.scanResults.classes.concat();
+
+			classes.sort(function(a, b) {
+				return a.js.packageName > b.js.packageName;
+			});
+
+			var lastPackageName = "";
+			for (var i = 0; i < classes.length; i++) {
+				var ci = classes[i];
+
+				if (lastPackageName != ci.js.packageName) {
+					requireOutputFile += prefix + "//---------------------------------\n";
+					requireOutputFile += prefix + "// " + ci.js.packageName.toUpperCase() + "\n";
+					requireOutputFile += prefix + "//---------------------------------\n";
+				}
 
 				requireOutputFile += prefix + "\"" + ci.js.packageName + project.settings.packageDelimiter + ci.js.className + "\": \"" + ci.js.packagePath + "\",\n";
+
+				lastPackageName = ci.js.packageName;
 			}
 
 			requireOutputFile = requireOutputFile.substr(0, requireOutputFile.length - 2) + "\n";
