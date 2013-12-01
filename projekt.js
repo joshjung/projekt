@@ -30,7 +30,7 @@ var instructions = {
 };
 
 if (process.argv.length == 2) {
-	var thr = "ERROR: Must provide at least one instruction: node proj/do.js <instruction>\n\n";
+	var thr = "ERROR: Must provide at least one instruction: projekt <instruction>\n\n";
 
 	for (var instruction in instructions) {
 		thr += " * " + instruction + ": " + instructions[instruction].desc + "\n";

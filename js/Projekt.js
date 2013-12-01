@@ -28,6 +28,8 @@ ProjectLibrary.prototype = {
 
 			self.settings = JSON.parse(data);
 
+			this.setupPackageDefaults();
+
 			callback(self.settings);
 		});
 	},
